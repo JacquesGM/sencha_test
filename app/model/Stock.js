@@ -4,8 +4,7 @@ Ext.define('MeuTeste.model.Stock', {
     store: 'MeuTeste.store.StockStore',
     fields: [
         {name: 'name', type: 'string'},
-        {name: 'priceNow', type: 'float'},
-        {name: 'startingPrice', type: 'float'},
+        {name: 'priceNow', type: 'float'},        
         {name: 'diff', type: 'float'},
     ]
 });

@@ -5,8 +5,7 @@ Ext.define('MeuTeste.store.StocksStore', {
     autoLoad: true,
     fields: [
         {name: 'name'},
-        {name: 'priceNow'},
-        {name: 'startingPrice'},
+        {name: 'priceNow'},        
         {name: 'diff'},
     ],
     proxy: {

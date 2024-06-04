@@ -6,14 +6,16 @@ Ext.define('MeuTeste.view.main.Grid', {
     columns: [
         {text: 'Name', dataIndex: 'name', flex: 1},
         {text: 'Price Now', dataIndex: 'priceNow', flex: 1},
-        {text: 'Starting Price', dataIndex: 'startingPrice', flex: 1},
         {
-            text: 'Difference',
+            text: 'Last month',
             dataIndex: 'diff',
             xtype: 'widgetcolumn',
             widget: {
-                xtype: 'progressbarwidget',
-                textTpl: '{value:percent}'
+                xtype: 'sparklineline',
+                fillCollor: '#ddf',
+                width: 100,
+                height: 20
+                
             },
             flex: 1
         }
